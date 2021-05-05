@@ -100,6 +100,22 @@ img:hover {
   margin-left: 2rem;
 }
 
+/*Verča*/
+.verca {
+  overflow: auto;
+}
+.verca__image {
+  width: 30vw;
+  float: left;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.verca__deti {
+  width: 30vw;
+  float: right;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
 /*Společný footer*/
 .footer-end__logo {
   height: 2rem;
