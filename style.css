@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+/*
+	BARVY
+	zelená      #0a9c4a;
+	tmavá   #31363b
+	
+*/
+html {
+  background-color: #a4e9c2;
+}
+body {
+  width: 960px;
+  padding: 0;
+  margin: 0 auto;
+  background-color: #ffffff;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+}
+header {
+  height: 6rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: #31363b;
+  padding: 0;
+  margin: 0;
+  height: 6rem;
+}
+.logo {
+  height: 6rem;
+  filter: grayscale(0);
+}
+.navigation a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 2rem 2rem;
+  height: 6rem;
+  display: block;
+}
+
+.navigation a:hover {
+  color: #31363b;
+  background-color: #0a9c4a;
+}
+.nav-link {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  height: 5rem;
+}
+
+main {
+  padding: 3rem;
+}
+
+.img-hyposka {
+  height: 48vh;
+  float: left;
+  padding-right: 1rem;
+  filter: grayscale(0);
+}
+img {
+  width: 20vw;
+  filter: grayscale(100%);
+  /* při změně hodnoty se bude hodnota animovat během 0,3 vteřiny */
+  transition: 0.3s;
+}
+img:hover {
+  filter: grayscale(0);
+}
+
+.footer-end__logo {
+  height: 2rem;
+  filter: grayscale(0);
+  margin: 16px;
+}
+
+.footer-end {
+  display: flex;
+  background-color: #31363b;
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+}
