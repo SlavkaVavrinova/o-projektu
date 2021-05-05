@@ -12,16 +12,13 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+
   <body>
     <header>
       <div class="navigation">
-        <img
-          class="logo"
-          href="index.html"
-          src="images/logo.svg"
-          alt="Logo o projektu"
-        />
-        <nav class="nav-link">
+        <a class="navigation__logo" href="index.html"></a>
+
+        <nav class="navigation__link">
           <a href="index.html">O projektu</a>
           <a href="slavka.html">O Slávce</a>
           <a href="verca.html">O Verče</a>
@@ -30,11 +27,24 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <h1>Kontakty na nás</h1>
+      <p>Máš pro nás radu? Napiš, budeme rády!</p>
+      <h2>Slávka Vavřinová</h2>
+      <div class="contact">
+        <img class="contact__img" src="images/email.svg" alt="E-mail" />
+        <p>slavka.vav@gmail.com</p>
+      </div>
+      <div class="contact">
+        <img class="contact__img" src="images/logo-git.svg" alt="Logo GitHub" />
+        <p>SlavkaVavrinova</p>
+      </div>
+    </main>
+
     <footer>
       <div class="footer-end">
         <img class="footer-end__logo" src="images/logo.svg" alt="Logo" />
-        <p class="footer-end__text">Slávka a Verča 2021</p>
+        <p class="footer-end__text">© 2021 Slávka a Verča</p>
       </div>
     </footer>
   </body>
