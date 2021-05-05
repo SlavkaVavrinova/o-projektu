@@ -21,9 +21,9 @@ body {
   padding: 0;
   margin: 0 auto;
   background-color: #ffffff;
-  font-family: 'Lora', serif;
+  font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 125%;
   line-height: 1.5;
 }
 header {
@@ -81,6 +81,22 @@ img:hover {
   filter: grayscale(0);
 }
 
+/*Slávka*/
+.slavka {
+  overflow: auto;
+}
+.slavka__image {
+  width: 30vw;
+  float: left;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+.slavka__family {
+  width: 30vw;
+  float: right;
+  border-radius: 50%;
+  margin-left: 2rem;
+}
 .footer-end__logo {
   height: 2rem;
   filter: grayscale(0);
