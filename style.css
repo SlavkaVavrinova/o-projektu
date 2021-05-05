@@ -9,13 +9,15 @@ html {
 
 /*
 	BARVY
-	zelená      #0a9c4a;
-	tmavá   #31363b
-	
+	zelená      #0a9c4a
+	tmavá       #31363b
+	pozadí      #a4e9c2
 */
+
 html {
   background-color: #a4e9c2;
 }
+
 body {
   width: 960px;
   padding: 0;
@@ -26,6 +28,7 @@ body {
   font-size: 125%;
   line-height: 1.5;
 }
+
 header {
   height: 6rem;
 }
@@ -38,10 +41,16 @@ header {
   margin: 0;
   height: 6rem;
 }
-.logo {
-  height: 6rem;
-  filter: grayscale(0);
+
+.navigation__logo {
+  display: block;
+  background-image: url(images/logo.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
 }
+
 .navigation a {
   text-decoration: none;
   color: #ffffff;
@@ -54,14 +63,26 @@ header {
   color: #31363b;
   background-color: #0a9c4a;
 }
-.nav-link {
+
+.navigation__link {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
   height: 5rem;
 }
 
-/* tady končí společná hlavička*/
+/* konec společné hlavičky */
+
+/* index */
+
+h1 {
+  color: #0a9c4a;
+}
+
+h2 {
+  color: #0a9c4a;
+  clear: both;
+}
 
 main {
   padding: 3rem;
@@ -70,28 +91,37 @@ main {
 .img-hyposka {
   height: 48vh;
   float: left;
-  padding-right: 1rem;
-  filter: grayscale(0);
+  margin-top: 2rem;
 }
+
+.img-house {
+  height: 48vh;
+  float: right;
+  padding-left: 1rem;
+  padding-top: 0;
+}
+
 img {
   width: 20vw;
   filter: grayscale(100%);
-  /* při změně hodnoty se bude hodnota animovat během 0,3 vteřiny */
-  transition: 0.3s;
 }
+
 img:hover {
   filter: grayscale(0);
 }
 
-/*Slávka*/
+/* Slávka */
 .slavka {
+  overflow: auto;
 }
+
 .slavka__image {
   width: 30vw;
   float: left;
   border-radius: 50%;
   margin-right: 2rem;
 }
+
 .slavka__family {
   width: 30vw;
   float: right;
@@ -99,27 +129,40 @@ img:hover {
   margin-left: 2rem;
 }
 
-/*Verča*/
+/* Verča */
 .verca {
   overflow: auto;
 }
+
 .verca__image {
   width: 30vw;
   float: left;
   border-radius: 50%;
   margin-right: 2rem;
 }
+
 .verca__deti {
   width: 30vw;
   float: right;
   border-radius: 50%;
   margin-left: 2rem;
 }
-/*Společný footer*/
+
+.contact {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.contact__img {
+  height: 3rem;
+}
+
+/* Společný footer */
+
 .footer-end__logo {
   height: 2rem;
   filter: grayscale(0);
-  margin: 16px;
+  margin: 1rem;
 }
 
 .footer-end {
@@ -128,4 +171,10 @@ img:hover {
   padding: 0;
   margin: 0;
   color: #ffffff;
+}
+
+.footer-end__text {
+  font-size: 70%;
+  padding: 0;
+  margin: 1rem;
 }
