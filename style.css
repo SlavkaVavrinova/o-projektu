@@ -51,6 +51,15 @@ header {
   width: 200px;
 }
 
+.navigation__logo:hover {
+  display: block;
+  background-image: url(images/logo-hover.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+}
+
 .navigation a {
   text-decoration: none;
   color: #ffffff;
