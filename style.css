@@ -14,19 +14,11 @@ html {
 	pozadí      #a4e9c2
 */
 
-html {
-  background-color: #a4e9c2;
-}
-
 body {
-  width: 80vw;
-  max-width: 960px;
   padding: 0;
   margin: 0 auto;
   background-color: #ffffff;
   font-family: 'Montserrat', 'Arial', sans-serif;
-  font-weight: 400;
-  font-size: 125%;
   line-height: 1.5;
 }
 
@@ -187,4 +179,24 @@ img:hover {
   font-size: 70%;
   padding: 0;
   margin: 1rem;
+}
+
+@media (min-width: 540px) {
+  body {
+    width: 90vw;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    line-height: 1.5;
+  }
+  html {
+    background-color: #a4e9c2;
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    width: 80vw;
+    max-width: 960px;
+    font-weight: 400;
+    font-size: 125%;
+  }
 }
