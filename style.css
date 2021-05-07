@@ -20,10 +20,7 @@ body {
   background-color: #ffffff;
   font-family: 'Montserrat', 'Arial', sans-serif;
   line-height: 1.5;
-}
-
-header {
-  height: 6rem;
+  text-align: justify;
 }
 
 .navigation {
@@ -62,10 +59,9 @@ header {
 
 /* konec společné hlavičky */
 
-/* index */
-
 h1 {
   color: #0a9c4a;
+  font-size: 150%;
 }
 
 h2 {
@@ -84,7 +80,7 @@ main {
 }
 
 .img-house {
-  height: 48vh;
+  width: 20vw;
   float: right;
   padding-left: 1rem;
   padding-top: 0;
@@ -99,30 +95,13 @@ img:hover {
   filter: grayscale(0);
 }
 
-/* Slávka */
-.slavka {
-  overflow: auto;
-}
-
-.slavka__image {
-  width: 30vw;
-  float: left;
-  border-radius: 50%;
-  margin-right: 2rem;
-}
-
-.slavka__family {
-  width: 30vw;
-  float: right;
-  border-radius: 50%;
-  margin-left: 2rem;
-}
-
-/* Verča */
+/* Slávka a Verca */
+.slavka,
 .verca {
   overflow: auto;
 }
 
+.slavka__image,
 .verca__image {
   width: 30vw;
   float: left;
@@ -130,6 +109,7 @@ img:hover {
   margin-right: 2rem;
 }
 
+.slavka__family,
 .verca__deti {
   width: 30vw;
   float: right;
@@ -137,6 +117,7 @@ img:hover {
   margin-left: 2rem;
 }
 
+/*Kontakt */
 .contact {
   display: flex;
   justify-content: flex-start;
@@ -174,9 +155,15 @@ img:hover {
     font-family: 'Montserrat', 'Arial', sans-serif;
     line-height: 1.5;
   }
+
   html {
     background-color: #a4e9c2;
   }
+
+  h1 {
+    font-size: 200%;
+  }
+
   .navigation__logo {
     display: block;
     background-image: url(images/logo.svg);
@@ -194,6 +181,7 @@ img:hover {
     background-position: center;
     width: 200px;
   }
+
   .navigation a {
     font-size: 1.6vw;
     padding: 2rem 1rem;
