@@ -36,27 +36,13 @@ header {
 }
 
 .navigation__logo {
-  display: block;
-  background-image: url(images/logo.svg);
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 200px;
-}
-
-.navigation__logo:hover {
-  display: block;
-  background-image: url(images/logo-hover.svg);
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 200px;
+  display: none;
 }
 
 .navigation a {
   text-decoration: none;
   color: #ffffff;
-  padding: 2rem 2rem;
+  padding: 2rem 1rem;
   height: 6rem;
   display: block;
 }
@@ -189,6 +175,29 @@ img:hover {
   }
   html {
     background-color: #a4e9c2;
+  }
+  .navigation__logo {
+    display: block;
+    background-image: url(images/logo.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+  }
+
+  .navigation__logo:hover {
+    display: block;
+    background-image: url(images/logo-hover.svg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 200px;
+  }
+  .navigation a {
+    font-size: 1.6vw;
+    padding: 2rem 1rem;
+    height: 6rem;
+    display: block;
   }
 }
 
